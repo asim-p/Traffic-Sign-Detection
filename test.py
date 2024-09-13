@@ -135,7 +135,7 @@ while True:
     img = preprocessing(img)
     cv2.imshow("Processed Image", img)
     img = img.reshape(1, 32, 32, 1)
-    cv2.putText(imgOrignal, "CLASS: ", (20, 35), font, 0.75, (0, 0, 255), 2, cv2.LINE_AA)
+    cv2.putText(imgOrignal, "SIGN: ", (20, 35), font, 0.75, (0, 0, 255), 2, cv2.LINE_AA)
     cv2.putText(imgOrignal, "PROBABILITY: ", (20, 75), font, 0.75, (0, 0, 255), 2, cv2.LINE_AA)
     # PREDICT IMAGE
     predictions = model.predict(img)
